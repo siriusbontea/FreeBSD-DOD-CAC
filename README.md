@@ -12,13 +12,20 @@
 
 **add lines to /etc/devd.conf**
 > attach 100 {
->         device-name "ugen[0-9]+";
->         action "/usr/local/sbin/pcscd -H";
-> };
 > 
-> detach 100 {
 >         device-name "ugen[0-9]+";
+>         
 >         action "/usr/local/sbin/pcscd -H";
+>         
+> };
+>
+>
+> detach 100 {
+> 
+>         device-name "ugen[0-9]+";
+>         
+>         action "/usr/local/sbin/pcscd -H";
+>         
 > };
 
 **start the service:**
