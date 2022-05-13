@@ -26,6 +26,7 @@
 
 **check:**
 > opensc-tool -l
+>
 > pcsc_scan
 
 **Firefox** 
