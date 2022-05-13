@@ -12,27 +12,20 @@
 
 **add lines to /etc/devd.conf**
 > attach 100 { <br>
->         device-name "ugen[0-9]+";
->         
->         action "/usr/local/sbin/pcscd -H";
->         
-> };
->
->
-> detach 100 {
-> 
->         device-name "ugen[0-9]+";
->         
->         action "/usr/local/sbin/pcscd -H";
->         
-> };
+    > device-name "ugen[0-9]+";<br>
+    > action "/usr/local/sbin/pcscd -H"; <br>
+> }; <br>
+> <br>
+> detach 100 { <br>
+    > device-name "ugen[0-9]+"; <br>
+    > action "/usr/local/sbin/pcscd -H"; <br>
+> }; <br>
 
 **start the service:**
 > service pcscd onestart 
 
 **check:**
-> opensc-tool -l
->
+> opensc-tool -l <br>
 > pcsc_scan
 
 **Firefox** 
