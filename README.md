@@ -11,7 +11,7 @@
 > pcscd_enable="YES"
 
 **add lines to /etc/devd.conf**
-```
+```bash
 attach 100 { 
     device-name "ugen[0-9]+";
     action "/usr/local/sbin/pcscd -H";
@@ -26,9 +26,12 @@ detach 100 {
 **start the service:**
 > service pcscd onestart 
 
-**check:**
+**check with**
 ```
 opensc-tool -l
+```
+or
+```
 pcsc_scan
 ```
 **Firefox** 
