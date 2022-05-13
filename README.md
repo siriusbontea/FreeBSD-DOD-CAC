@@ -11,8 +11,7 @@
 > pcscd_enable="YES"
 
 **add lines to /etc/devd.conf**
-> attach 100 {
-> 
+> attach 100 { <br>
 >         device-name "ugen[0-9]+";
 >         
 >         action "/usr/local/sbin/pcscd -H";
