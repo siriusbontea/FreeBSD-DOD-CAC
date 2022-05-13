@@ -1,7 +1,7 @@
 ## FreeBSD DOD CAC Smart Card
-#### Tested on FreeBSD 13-RELEASE with 
-#### SCM Microsystems Inc. SCR 355 reader
+#### Tested on FreeBSD 13-1-RC6 with SCM Microsystems Inc. SCR 355 reader
 
+### Steps:
 **install:**
 - opensc
 - pcsc-lite
